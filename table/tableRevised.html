@@ -1,0 +1,373 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+    body{
+      /* background-color: #03334e;*/
+      color:#fff;
+      overflow-x: hidden;
+    }
+    .titleContainer {
+      background-color: #fff;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      padding: 10px 0 ;
+      font-weight: bold;
+      text-align: center;
+      box-sizing: border-box;
+      margin: 0 auto;
+      width: 100%;
+      color: #03334e;
+    }
+    .boxContainer, .headerContainer {
+      overflow-x: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .headerContainer {
+      margin-top: 10px;
+      display: none;
+    }
+    .headerContainer > div {
+      text-align: center;
+      font-weight: bold;
+      /*min-width: 150px;*/
+      width: 48%;
+      box-sizing: border-box;
+      color: #000;
+    }
+    .iconCircle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .iconCircle .fab {
+      font-size: 24px;
+    }
+    .box {
+      padding: 10px;
+      /* min-width: 150px;*/
+      width: 48%;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .box li {
+      margin-bottom: 5px;
+    }
+    .facebook {
+      background-color:#0932a0;
+    }
+    .youtube {
+      background-color:#d2424b;
+    }
+    .instagram{
+      background-color:#fa9632;
+    }
+    .twitter{
+      background-color:#009bff;
+    }
+    .linkedin{
+      background-color:#1665cf;
+    }
+    .ticktock{
+      background-color:#8fd16a;
+    }
+    .snapchat{
+      background-color:#ffbe22;
+    }
+    .iconCircle.facebook {
+      color: #0932a0;
+    }
+    .iconCircle.youtube {
+      color: #d2424b;
+    }
+    .iconCircle.instagram {
+      color: #fa9632;
+    }
+    .iconCircle.twitter {
+      color: #009bff;
+    }
+    .iconCircle.linkedin {
+      color: #1665cf;
+    }
+    .iconCircle.ticktock {
+      color: #8fd16a;
+    }
+    .iconCircle.snapchat {
+      color: #ffbe22;
+    }
+    .box:first-child .iconCircle {
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .iconCircle img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .box:first-child {
+      padding-left: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .titleContainer {
+        width: 100%;
+      }
+      .box {
+        min-width: 150px;
+        width: 48%;
+      }
+      .boxContainer, .headerContainer {
+        overflow-x: unset;
+      }
+      .headerContainer {
+        display: flex;
+      }
+      .boxContainer {
+        justify-content: space-between;
+      }
+      .box, .headerContainer > div {
+        width: calc(25% - 10px);
+      }
+      .box:first-child .iconCircle {
+        left: -25px;
+      }
+      .box:first-child .iconCircle {
+        border: 1px solid #000;}
+    }
+  </style>
+</head>
+<body>
+<h2 class="titleContainer">
+  Plattformen für Social Media Mar&shy;keting
+</h2>
+<section class="headerContainer">
+  <div>Personen</div>
+  <div>Inhalt</div>
+  <div>Strategien</div>
+  <div>Nachteile</div>
+</section>
+<section class="boxContainer">
+  <article class="box facebook">
+    <div class="iconCircle facebook">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <ul>
+      <li>25-34</li>
+    </ul>
+  </article>
+  <article class="box facebook">
+    <ul>
+      <li>Fotos und Links</li>
+      <li>Infor&shy;mation</li>
+      <li>Live&shy;video</li>
+    </ul>
+  </article>
+  <article class="box facebook">
+    <ul>
+      <li>Lokales Mar&shy;keting</li>
+      <li>Werbung</li>
+      <li>Beziehungs&shy;aufbau</li>
+    </ul>
+  </article>
+  <article class="box facebook">
+    <ul>
+      <li>Schwache organische Reich&shy;weite</li>
+    </ul>
+  </article>
+</section>
+<section class="boxContainer">
+  <article class="box youtube">
+    <div class="iconCircle youtube">
+      <i class="fab fa-youtube"></i>
+    </div>
+    <ul>
+      <li>18-25</li>
+      <li>26-35</li>
+    </ul>
+  </article>
+  <article class="box youtube">
+    <ul>
+      <li>Anleitungen</li>
+      <li>Webinare</li>
+      <li>Erklärungen</li>
+    </ul>
+  </article>
+  <article class="box youtube">
+    <ul>
+      <li>Organisch</li>
+      <li>SEO</li>
+      <li>Werbung</li>
+    </ul>
+  </article>
+  <div class="box youtube">
+    <ul>
+      <li>Videos sind Ressourcen&shy;intensiv</li>
+    </ul>
+  </div>
+</section>
+<section class="boxContainer">
+  <article class="box instagram">
+    <div class="iconCircle instagram">
+      <i class="fab fa-instagram"></i>
+    </div>
+    <ul>
+      <li>18-24</li>
+      <li>25-34</li>
+    </ul>
+  </article>
+  <article class="box instagram">
+    <ul>
+      <li>Inspiration & Abenteuer</li>
+      <li>Fragen/Umfragen</li>
+    </ul>
+  </article>
+  <article class="box instagram">
+    <ul>
+      <li>Ecommerce</li>
+      <li>Organisch</li>
+      <li>Influencer</li>
+    </ul>
+  </article>
+  <div class="box instagram">
+    <ul>
+      <li>Hohe Werbe&shy;kosten</li>
+    </ul>
+  </div>
+</section>
+<section class="boxContainer">
+  <article class="box twitter">
+    <div class="iconCircle twitter">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <ul>
+      <li>25-34</li>
+      <li>35-49</li>
+    </ul>
+  </article>
+  <article class="box twitter">
+    <ul>
+      <li>Nachrichten</li>
+      <li>Dis&shy;kussion</li>
+      <li>Humor</li>
+    </ul>
+  </article>
+  <article class="box twitter">
+    <ul>
+      <li>Kundenservice</li>
+      <li>Werbung für Männer</li>
+    </ul>
+  </article>
+  <article class="box twitter">
+    <ul>
+      <li>Kleine Werbe&shy;zielgruppe</li>
+    </ul>
+  </article>
+</section>
+<section class="boxContainer">
+  <article class="box linkedin">
+    <div class="iconCircle linkedin">
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+    <ul>
+      <li>46-55</li>
+    </ul>
+  </article>
+  <article class="box linkedin">
+    <ul>
+      <li>Langform-Inhalte</li>
+      <li>Kernwerte</li>
+    </ul>
+  </article>
+  <article class="box linkedin">
+    <ul>
+      <li>B2B</li>
+      <li>Organisch</li>
+      <li>International</li>
+    </ul>
+  </article>
+  <article class="box linkedin">
+    <ul>
+      <li>Werbeberichterstattung & angepasste Zielgruppe</li>
+    </ul>
+  </article>
+</section>
+<section class="boxContainer">
+  <article class="box ticktock">
+    <div class="iconCircle ticktock">
+      <i class="fab fa-tiktok"></i>
+    </div>
+    <ul>
+      <li>10-19</li>
+    </ul>
+  </article>
+  <article class="box ticktock">
+    <ul>
+      <li>Unterhaltung</li>
+      <li>Humor</li>
+      <li>Heraus&shy;forderungen</li>
+    </ul>
+  </article>
+  <article class="box ticktock">
+    <ul>
+      <li>Influencer Mar&shy;keting</li>
+      <li>Serieninhalte</li>
+    </ul>
+  </article>
+  <article class="box ticktock">
+    <ul>
+      <li>Beziehungs&shy;aufbau</li>
+    </ul>
+  </article>
+</section>
+<section class="boxContainer">
+  <article class="box snapchat">
+    <div class="iconCircle snapchat">
+      <i class="fab fa-snapchat-ghost"></i>
+    </div>
+    <ul>
+      <li>13-24</li>
+    </ul>
+  </article>
+  <article class="box snapchat">
+    <ul>
+      <li>Unterhaltung</li>
+      <li>Foto&shy;geschichten</li>
+    </ul>
+  </article>
+  <article class="box snapchat">
+    <ul>
+      <li>Organisch</li>
+      <li>APP Mar&shy;keting</li>
+    </ul>
+  </article>
+  <article class="box snapchat">
+    <ul>
+      <li>Kurzlebig</li>
+    </ul>
+  </article>
+</section>
+</body>
+</html>
